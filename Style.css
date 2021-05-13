@@ -1,0 +1,93 @@
+body{
+    font-family:sans-serif;
+    background-color:black;
+  }
+  #navbar{
+    width:100%;
+    background-color:#be3144;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+  }
+  #navbar a{
+    float:right;
+    margin:auto;
+    color:white;
+    text-align:center;
+    padding:16px 20px;
+    text-decoration:none;
+    font-size:18px;
+    transition:background .5s ease,color .5s ease;
+  }
+  #navbar a:hover{
+    background-color:lightblue;
+    color:black;
+    }
+  #navbar a:active{
+    background-color:#be3144;
+    color:white;
+  }
+  
+  #welcome-section{
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  h1{
+    font-size:50px;
+    margin-top:100px;
+    color:white;
+  }
+  h2{
+    text-align:center;
+    font-weight:200;
+    font-size:30px;
+    font-style:italic;
+    color:#be3144;
+    margin-top:0;
+  }
+  #projects{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:50px;
+  }
+  
+  .project-tile{
+    border:none;
+    color:#be3144;
+    background-color:#1a1a1a;
+    text-decoration:none;
+    padding:20px;
+    transition:background 1s ease,padding 4s ease;
+    cursor:pointer;
+    font-size:25px;
+    margin:100px;
+  }
+  .project-tile:hover{
+    padding:20px;
+    box-shadow:0px 0px 20px #be3144;
+    }
+  #contact-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  #profile-link{
+    color:white;
+    text-decoration:none;
+    background-color:#be3144;
+   font-size:20px;
+    padding: 10px 10px 10px 10px;
+  }
+  @media screen and(max-width:600px)
+  {
+    #navbar{position:fixed;}
+  }
